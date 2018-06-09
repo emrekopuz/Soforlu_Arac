@@ -3,7 +3,7 @@
 include('connection.php');
 $pdo = connect();
 if(isset($_POST['sign'])){
-if ((!empty($_POST['password']))and (!empty($_POST['user']))){
+    if ((!empty($_POST['password']))and (!empty($_POST['user']))){
     $user=$_POST['user'];
     $password=$_POST['password'];
   if ((preg_match('/^[-a-z0-9A-Z+&@#\/%=~_|]*$/', $password) )and (preg_match('/^[-a-z0-9A-Z+&@#\/%=~_|]*$/', $user) )){
@@ -63,7 +63,6 @@ if ((!empty($_POST['password']))and (!empty($_POST['user']))){
     echo '<h1>';
       echo 'boş yer bırakma ';
       echo '</h1>';
-}
 }
 ?>
 

@@ -12,7 +12,7 @@
 				<li>Give us a call : +66666666 </li>
 			</ul>
 			<ul class="logreg">
-				<span class="register btn btn-primary" onclick="show_popup('popup_upload')">Login </span> 
+				<span class="register btn btn-primary"><a href="pages/login.php">Login </a></span> 
 				<span class="register btn btn-success" onclick="document.getElementById('id01').style.display='block'">Register</span>
 			</ul>
 	</div>
