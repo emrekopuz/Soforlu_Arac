@@ -28,7 +28,7 @@ if(isset($_POST['sign'])){
             if($user==$usr['kullaniciAdi']){
                     foreach($list as $yn){
                         if(($user==$yn['kullaniciAdi']) and ($password==$yn['sifre'])){
-                            header('../Admin/index.html');
+                            header('location: ../Admin/index.html');
                         }else{
                             echo 'Parola hatalı';
                         }
@@ -37,7 +37,7 @@ if(isset($_POST['sign'])){
                 elseif($user==$usr['haKullaniciAdi']){
                     foreach($list2 as $yn){
                         if(($user==$yn['haKullaniciAdi']) and ($password==$yn['sifre'])){
-                            header('../index.php');
+                            header('location:../index.php');
                         }else{
                             echo 'Parola hatalı';
                         }
@@ -45,7 +45,7 @@ if(isset($_POST['sign'])){
                 }else{
                     foreach($list3 as $yn){
                         if(($user==$yn['hvKullaniciAdi']) and ($password==$yn['sifre'])){
-                            header('../index.php');
+                            header('location:../index.php');
                         }else{
                             echo 'Parola hatalı';
                         }
