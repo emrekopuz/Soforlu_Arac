@@ -13,9 +13,7 @@
 </div>
 <br>
 <br>
-<?php
-
-include "baglan.php";
+<?php include "baglan.php";
 $stmt="<div class=\"row\">";
 $query=$db->query("SELECT * FROM arac where aracDurum=1",PDO::FETCH_ASSOC);
   

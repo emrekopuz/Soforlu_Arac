@@ -12,8 +12,8 @@
 				<li>Give us a call : +66666666 </li>
 			</ul>
 			<ul class="logreg">
-				<li><a href="pages/login.php">Login </a> </li>
-				<li><a href="pages/register.php"><span class="register">Register</span></a></li>
+				<span class="register btn btn-primary" onclick="show_popup('popup_upload')">Login </span> 
+				<span class="register btn btn-success" onclick="document.getElementById('id01').style.display='block'">Register</span>
 			</ul>
 	</div>
 	<!-- Navbar Up -->
@@ -29,7 +29,7 @@
 			</div>	 
 		</div>
 		<div class="collapse navbar-collapse" id="upmenu">
-			<span class="navbar-header"><a class="navbar-brand logo" href="#"><span></span><img src="image/wings.png" height="58"logo"></a></span>
+			<span class="navbar-header"><a class="navbar-brand logo" href="#"><span></span><img src="image/wings.png" height="58"></a></span>
 			<ul class="nav navbar-nav" id="navbarontop">
 			  <li class="active"><a href="#">HOME</a> </li>
 				<li class="dropdown">
@@ -56,4 +56,20 @@
 			</ul>
 		</div>
 	</nav>
+</div>
+<div id="id01" class="w3-modal">
+          <div class="w3-modal-content w3-card-4">
+            <header class="w3-container w3-light-blue"> 
+              <span onclick="document.getElementById('id01').style.display='none'" 
+              class="w3-button w3-display-topright"><i class="fa fa-fw fa-times"></i></span>
+              <h2 class="w3-center">KAYIT YÖNLENDİR</h2>
+            </header>
+            <div class="w3-container w3-light-blue w3-center">
+              <div class="input-group-btn">
+                        <span  class="btn btn-danger import"> <a href="hizmetAlan/index.php"><i class="fa fa-fw fa-plus-square-o" ></i>Hizmet Alan Kayıt</a></span>
+                        <span  class="btn btn-danger import"><a href="hizmetVeren/index.php"><i class="fa fa-fw fa-plus-square-o" ></i>Şoför Kayıt</a></span>
+                        <span  class="btn btn-danger import2"><a href="yonetici/index.php"><i class="fa fa-fw fa-plus-square-o"></i>Yönetici Kayıt</a></span>
+              </div><!-- /btn-group -->
+            </div>
+		  </div>
 </div>
