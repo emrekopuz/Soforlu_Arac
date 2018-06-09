@@ -2,7 +2,7 @@
 // including the config file
 include('connection.php');
 $pdo = connect();
-if(isset($_POST['sign'])){
+if(isset($_POST['signin'])){
     if ((!empty($_POST['password']))and (!empty($_POST['user']))){
     $user=$_POST['user'];
     $password=$_POST['password'];

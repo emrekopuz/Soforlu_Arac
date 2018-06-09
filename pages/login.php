@@ -23,7 +23,7 @@
   <body class="login-page">
     <div class="login-box">
       <div class="login-logo">
-        <a href="loginback.php"><b>Admin</b>LTE</a>
+        <a href="../Admin/index2.html">Giriş<b>Yap</b></a>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <p class="login-box-msg">Sign in to start your session</p>
@@ -38,11 +38,10 @@
           </div>
           <div class="row">
             <div class="col-xs-4">
-              <button type="submit" class="btn btn-primary btn-block btn-flat" name"sign">Sign In</button>
+              <button type="submit" class="btn btn-primary btn-block btn-flat" name="signin">Sign In</button>
             </div><!-- /.col -->
           </div>
         </form>
-
         <div class="social-auth-links text-center">
           <p>- OR -</p>
           <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using Facebook</a>
