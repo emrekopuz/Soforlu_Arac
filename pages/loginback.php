@@ -52,7 +52,7 @@ if(isset($_POST['signin'])){
                     }
                 }
             }
-        }echo '<div>PAROLA HATALI</div>';
+        }echo '<div>KULLANICI BULUNAMADI</div>';
     }
   } else {
       echo '<h1>';
